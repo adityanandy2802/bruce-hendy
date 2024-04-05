@@ -17,7 +17,7 @@ body {
     position: relative; /* Fix the canvas to the viewport */
     background-image: url("images/bg_image.jpg");
     opacity: 0.9;
-    background-color: rgba(0, 0, 255, 0.3);
+    background-color: rgba(0, 255, 0, 0.1);
     background-blend-mode: overlay;
     background-size: cover;
     top: 0;
@@ -50,21 +50,21 @@ body {
   .nav-list li{
     text-decoration: none;
     display: inline-block; 
-    margin-right: 60px;
+    margin-right: 50px;
   }
 
   .demolink{
     color: white;
     background-color: darkgreen;
     font-weight: bold;
-    font-size:larger;
+    font-size:large;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 25px;
   }
 
   .demolink:hover{
-    color: lightblue;
+    color: white;
     background-color: black;
     transition:cubic-bezier(0.23, 1, 0.320, 1) 0.5s;
   }
@@ -73,7 +73,7 @@ body {
     text-decoration: none;
     color: #333; 
     font-weight: bold;
-    font-size:larger;
+    font-size:large;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 10px;
     border-radius: 5px;
@@ -191,3 +191,63 @@ body {
     margin-right: 50px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
+
+  .pragati{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 50px;
+    width: 75%;
+    height: 90vh;
+    box-shadow: 5px 5px 5px grey;
+  }
+
+  .pragati p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: lightgray;
+    margin-top: 15px;
+  }
+
+  #p1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: lightgray;
+    margin-top: -10px;
+  }
+
+  .pragati-title{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 0%;
+    font-size: 75px;
+  }
+
+  .pragati-container{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    background-color: skyblue;
+    border-color: black;
+    border-width: 100px;
+    width: 90%;
+    height: 320px;
+    border-radius: 20px;
+  }
+
+  .pragati-text{
+    margin-left: 20px;
+    justify-items: left;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .pragati-text-title{
+    font-weight: bolder;
+  }
+
+  .pragati-text-body{
+    font-weight: lighter;
+  }
+
+  

@@ -99,25 +99,26 @@ body {
 
   .carousel {
     object-fit: contain;
-    width: 600px; /* Adjust width as needed */
-    height: 300px;
+    width: 900px; /* Adjust width as needed */
+    height: 400px;
     border-radius: 10px;
     overflow: hidden; /* This is important to prevent items from overflowing the carousel */ 
     position: relative; /* Needed for absolute positioning of arrows */
   }
   
   .carousel-items {
-    width: 1800px;
-    height: 300px;
+    width: 2700px;
+    height: 400px;
     display: flex; /* Arranges images horizontally */
     transition: transform 0.5s ease-in-out; /* Smooth transition for slide animation */
   }
 
   .carousel-item {
     display: flex; /* Allow content arrangement within the item */
+    flex-direction: column;
     justify-content: center; /* Center content horizontally within the item (optional) */
     align-items: center; /* Center content vertically within the item (optional) */
-    background-color: white;
+    background-color: beige;
     width: 100%; /* Fills the width of the carousel */
     object-fit: contain;
   }
@@ -248,6 +249,16 @@ body {
     font-weight: lighter;
   }
 
+  .pragati-image{
+    margin-left: 100px;
+  }
+
+  .pragati-image img{
+    border-radius: 20px;
+    width: 25vw;
+    object-fit: contain;
+  }
+
   .features{
     display: flex;
     flex-direction: column;
@@ -313,9 +324,40 @@ body {
 
 .teammember{
   border-radius: 20px;
-  background-color: skyblue;
+  background-size: 20vw;
+  object-fit: contain;
   height: 40vh;
   width: 20vw;
   margin: 30px;
+}
+
+.membername{
+  background-color: lightblue;
+  color: black;
+  font-weight: bolder;
+  font-size: large;
+  text-align: center;
+  margin-bottom: 0%;
+  margin-top: 98%;
+  width: 20vw;
+  height: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  z-index: -10;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#devansh{
+  background-image: url("images/devanshpic.png");
+}
+
+#jyothi{
+  background-image: url("images/jyothipic.png");
+}
+
+#gaja{
+  background-image: url("images/gajapic.png");
 }
   

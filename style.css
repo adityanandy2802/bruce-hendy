@@ -1,0 +1,193 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0; 
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: lightblue;
+  }
+  
+  #myCanvas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Fix the canvas to the viewport */
+    background-image: url("images/bg_image.jpg");
+    opacity: 0.9;
+    background-color: rgba(0, 0, 255, 0.3);
+    background-blend-mode: overlay;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 600px;
+    /* z-index: -1; Make sure the canvas is behind other elements */
+  }
+  
+  #top_banner{
+    display: flex; /* Enable flexbox for the navbar */
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: auto;
+    background-color: white;
+    padding-left: 5%;
+    padding-top: 1%;
+    /* padding-right: 3%; */
+    opacity: 80%;
+    z-index: 50;
+  }
+
+  .nav-list{
+    list-style-type: none;
+    float: right;
+  }
+
+  .nav-list li{
+    text-decoration: none;
+    display: inline-block; 
+    margin-right: 60px;
+  }
+
+  .demolink{
+    color: white;
+    background-color: darkgreen;
+    font-weight: bold;
+    font-size:larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .demolink:hover{
+    color: lightblue;
+    background-color: black;
+    transition:cubic-bezier(0.23, 1, 0.320, 1) 0.5s;
+  }
+
+  .navlink{
+    text-decoration: none;
+    color: #333; 
+    font-weight: bold;
+    font-size:larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .navlink:hover{
+    color: darkblue; 
+    background-color: rgb(134, 214, 240);
+  }
+
+  .nav-list{
+    display: flex;
+  }
+
+  #resized-logo{
+    width: 7%; 
+    object-fit: contain
+  }
+
+  #heading{
+    position: relative;
+    margin-top: 20px;
+  }
+
+  .carousel {
+    object-fit: contain;
+    width: 600px; /* Adjust width as needed */
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden; /* This is important to prevent items from overflowing the carousel */ 
+    position: relative; /* Needed for absolute positioning of arrows */
+  }
+  
+  .carousel-items {
+    width: 1800px;
+    height: 300px;
+    display: flex; /* Arranges images horizontally */
+    transition: transform 0.5s ease-in-out; /* Smooth transition for slide animation */
+  }
+
+  .carousel-item {
+    display: flex; /* Allow content arrangement within the item */
+    justify-content: center; /* Center content horizontally within the item (optional) */
+    align-items: center; /* Center content vertically within the item (optional) */
+    background-color: white;
+    width: 100%; /* Fills the width of the carousel */
+    object-fit: contain;
+  }
+  
+  .carousel-img {
+    object-fit: contain;
+    width: 100%; /* Fills the width of the carousel */
+  }
+  
+  .carousel-arrow {
+    position: relative; /* Positions arrows within the carousel */
+    top: 50%; /* Centers arrows vertically */
+    transform: translateY(-50%); /*Adjusts vertical position if needed */
+    background-color: transparent; /* Removes default button background */
+    border: none; /* Removes default button border */
+    color: #fff; /* Arrow color */
+    font-size: 30px; /* Adjust arrow size */
+    cursor: pointer; /* Indicates clickability */
+    padding: 10px; /* Adds some padding around the arrow */
+  }
+  
+  .carousel-arrow.left {
+    position: fixed;
+    left: 10px; /* Positions left arrow on the left */
+  }
+  
+  .carousel-arrow.right {
+    position: fixed;
+    right: 10px; /* Positions right arrow on the right */
+  }
+
+  .impact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: rgb(230, 161, 0);
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3); /* Shadow below and to the right */
+    z-index: 3;
+    clear: both;
+    margin-top: -50px;
+    width: 90%;
+    height: 100px;
+    position: float;
+  }
+
+  .counter-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .counter {
+    font-size: 48px;
+    font-weight: bold; 
+    text-align: center;
+    color: brown;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .counter-point{
+    font-size: 16px;
+    font-weight: bold; 
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }

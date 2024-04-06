@@ -41,6 +41,17 @@ function update(name, target, step){
   }
   updateCounter();
 }
+
 update("#counter1", 60000, 500);
 update("#counter2", 800, 6);
 update("#counter3", 82000, 650);
+
+document.querySelector("#demo-request")
+.addEventListener("click", function(){
+  document.querySelector(".popup").classList.add("active");
+});
+
+document.querySelector(".popup .close-btn")
+.addEventListener("click", function(){
+  document.querySelector(".popup").classList.remove("active");
+});

@@ -140,19 +140,26 @@
 
   <div class = "popup">
     <button class = "close-btn">&times;</button>
-    <div class = "form">
+    <form action="https://formspree.io/f/xyzgynoo" method="POST" class = "form">
       <div class = "formtitle">Request a Demo</div>
-      <div class = "formelement">
-        <input type = "text" id = "formemail" placeholder = "Enter email address">
-      </div>
-      <div class = "formelement">
-        <input type = "number" id = "formphone" placeholder = "Enter mobile number">
-      </div>
-      <div class = "formelement">
-        <input type = "text" id = "formaddress" placeholder = "Enter address">
-      </div>
-      <button class = "submit">Submit</button>
-    </div>
+      <label class = "formelement">
+        Name:
+        <input name="name">
+      </label class = "formelement">
+      <label class = "formelement">
+        Your email:
+        <input type="email" name="email">
+      </label class = "formelement">
+      <label class = "formelement">
+        Address:
+        <textarea name="address"></textarea>
+      </label>
+      <label class = "formelement">
+        Your message:
+        <textarea name="message"></textarea>
+      </label>
+      <button class="submit">Send</button>
+    </form>
   </div>
   
   <script src="script.js"></script>
